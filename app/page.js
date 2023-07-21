@@ -1,94 +1,59 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image"
+import styles from "./page.module.css"
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <h1>Cómo crear un Carrusel en LinkedIn</h1>
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        <div>
+          <h2>1. Creá una cuenta en Canva</h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Para diseñar lo más fácil y rápido es crear una cuenta en{" "}
+            <a href="https://www.canva.com/" target="_blank" rel="noreferrer noopener">
+              {" "}
+              Canva.
+            </a>{" "}
           </p>
-        </a>
+          <p>Podés ingresar directamente con tu cuenta de gmail sin llenar nada.</p>
+        </div>
+
+        <div>
+          <h2>2. Creá tu diseño</h2>
+          <p>
+            El tamaño de tu diseño es importante para que las imágenes y el contenido se ajusten
+            bien.
+          </p>
+          <p>Elegí el template "Post para LinkedIn"</p>
+          <img src={"/01carrusel.jpg"} alt="canva crear diseño" />
+        </div>
+
+        <div>
+          <h2>3. Creá tu contenido</h2>
+          <p>Desplegá tu magia...</p>
+        </div>
+
+        <div>
+          <h2>4. Guardá como pdf</h2>
+          <p>Archivo → Descargar</p>
+          <img src={"/02carrusel.jpg"} alt="descargar archivo" />
+          <p>→ Como PDF</p>
+          <img src={"/03carrusel.jpg"} alt="guardar como pdf" />
+        </div>
+
+        <div>
+          <h2>5. Posteá en LinkedIn</h2>
+          <p>Agregá el pdf en el post</p>
+          <img src={"/04carrusel.jpg"} alt="postear en linkedin" />
+        </div>
+
+        <div className={styles.bob}>
+          <h2>Listo el Carrusel</h2>
+          <Image width={300} height={169} src={"/bob-ok.gif"} alt="bob esponja hace ok" />
+        </div>
       </div>
     </main>
   )
